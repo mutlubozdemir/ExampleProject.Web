@@ -18,6 +18,7 @@ namespace ExampleProject.Web.Areas.Admin.Controllers
             this.userManager = userManager;
             this.mapper = mapper;
         }
+
         public async Task<IActionResult> Index()
         {
             var users = await userManager.Users.ToListAsync();
